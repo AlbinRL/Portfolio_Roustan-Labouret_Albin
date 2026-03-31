@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mes Veilles</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles/global.css">
+    <link rel="stylesheet" href="styles/nav.css">
+</head>
+<body class="flex bg-gray-900">
+    <div id="nav-container"></div>
+
+    <div class="flex-1 flex flex-col min-h-screen">
+        <main class="flex-1 bg-gray-900 ml-64">
+            <div class="container mx-auto p-8">
+                <div class="text-center mb-12">
+                    <h1 class="text-4xl font-bold text-white mb-4">Mes Veilles</h1>
+                    <p class="text-xl text-gray-400 text-center">Aperçu de mes veilles technologiques récentes.</p>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-8">
+                    <article class="bg-gray-800 p-6 rounded-lg shadow-xl border border-gray-700">
+                        <div class="h-28 rounded-md bg-gradient-to-br from-indigo-500/20 to-blue-500/10 mb-4"></div>
+                        <h2 class="with-line">Veille 1</h2>
+                        <p class="text-gray-300">Sujet synthétique, principaux enseignements et sources clés.</p>
+                        <ul class="mt-4 text-gray-400 text-sm list-disc list-inside">
+                            <li>Thème: technologie/outil</li>
+                            <li>Points marquants: 2-3 insights</li>
+                            <li>Sources: articles, vidéos, docs</li>
+                        </ul>
+                        <div class="mt-6">
+                            <a href="/public/veilles/veille-1.html" class="inline-block bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition-colors">Lire la veille</a>
+                        </div>
+                    </article>
+
+                    <article class="bg-gray-800 p-6 rounded-lg shadow-xl border border-gray-700">
+                        <div class="h-28 rounded-md bg-gradient-to-br from-rose-500/20 to-pink-500/10 mb-4"></div>
+                        <h2 class="with-line">Veille 2</h2>
+                        <p class="text-gray-300">Sujet synthétique, principaux enseignements et sources clés.</p>
+                        <ul class="mt-4 text-gray-400 text-sm list-disc list-inside">
+                            <li>Thème: technologie/outil</li>
+                            <li>Points marquants: 2-3 insights</li>
+                            <li>Sources: articles, vidéos, docs</li>
+                        </ul>
+                        <div class="mt-6">
+                            <a href="/public/veilles/veille-2.html" class="inline-block bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition-colors">Lire la veille</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </main>
+
+        <footer class="bg-gray-800 text-gray-400 p-4 border-t border-gray-700">
+            <div class="footer-content mx-auto text-center">
+                <p class="text-center">&copy; 2024 ROUSTAN-LABOURET ALBIN. Tous droits réservés.</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="js/navigation.js"></script>
+</body>
+</html>
+
+

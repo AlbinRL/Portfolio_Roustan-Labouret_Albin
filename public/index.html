@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Portfolio - Accueil</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles/global.css">
+    <link rel="stylesheet" href="styles/nav.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+</head>
+<body class="flex bg-gray-900">
+    <!-- Conteneur pour la navigation -->
+    <div id="nav-container"></div>
+
+    <!-- Contenu principal -->
+    <div class="flex-1 flex flex-col min-h-screen">
+        <main class="flex-1 bg-gray-900 ml-64">
+            <div class="container mx-auto p-8">
+                <div class="text-center mb-12">
+                    <h1 class="text-4xl font-bold text-white mb-4">Bienvenue sur mon Portfolio</h1>
+                    <h2>Roustan-Labouret Albin</h2>
+                    <p class="text-xl text-gray-400 text-center">
+                        Etudiant en BTS SIO - option SLAM à l'EPSI
+                    </p>
+                </div>
+
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="bg-gray-800 p-6 rounded-lg shadow-xl border border-gray-700 md:col-span-2">
+                        <h2 class="with-line">À propos de moi</h2>
+                        <p class="text-gray-300">
+                            Bonjour, moi c'est Albin Roustan-Labouret.<br>
+                            Je suis actuellement étudiant en deuxième année de BTS SIO - option SLAM à l'EPSI Montpellier (34). <br>
+                            Je suis passionné par la programmation et le développement web. J'ai aussi toujours été intéressé par les nouvelles technologies. <br>
+                            C'est pourquoi j'ai décidé de me lancer dans le BTS SIO après avoir fait une année de BUT Informatique. <br>
+                            Bien que ma première année de BUT informatique n'ait pas été validée, 
+                            elle m'a permis d'acquérir des compétences en développement et gestion de projets, tout en renforçant ma méthodologie de travail et ma détermination.
+                        </p>
+                        <div class="mt-6 flex gap-4">
+                            <a href="parcour.html" class="inline-block border border-blue-500 text-blue-400 px-6 py-2 rounded-lg hover:bg-blue-900/30 transition-colors">
+                                Mon parcours
+                            </a>
+                            <a href="assets/CV_Roustan-Labouret_Albin.pdf" target="_blank" rel="noopener" class="inline-block bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition-colors">
+                                Voir mon CV
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-gray-800 p-5 rounded-lg shadow-xl border border-gray-700">
+                        <h2 class="with-line">Me Contacter</h2>
+                        <div class="flex flex-col gap-2 justify-evenly min-h-[200px]">
+                            <a href="mailto:roustan.a.pro@gmail.com" class="flex items-center gap-3 p-3 rounded-lg hover:bg-gray-700 transition-colors">
+                                <i class="fas fa-envelope text-xl text-blue-500"></i>
+                                <span class="text-gray-300">roustan.a.pro@gmail.com</span>
+                            </a>
+                            <a href="https://www.linkedin.com/in/albin-roustan-labouret-5885732ab/" target="_blank" class="flex items-center gap-3 p-3 rounded-lg hover:bg-gray-700 transition-colors">
+                                <i class="fab fa-linkedin text-xl text-blue-500"></i>
+                                <span class="text-gray-300">LinkedIn</span>
+                            </a>
+                            <a href="https://github.com/AlbinRL" target="_blank" class="flex items-center gap-3 p-3 rounded-lg hover:bg-gray-700 transition-colors">
+                                <i class="fab fa-github text-xl text-blue-500"></i>
+                                <span class="text-gray-300">GitHub</span>
+                            </a>
+                            <a href="tel:0783994446" class="flex items-center gap-3 p-3 rounded-lg hover:bg-gray-700 transition-colors">
+                                <i class="fas fa-phone text-xl text-blue-500"></i>
+                                <span class="text-gray-300">07 83 99 44 46</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Ma formation -->
+                <div class="mt-8 p-0">
+                    <h2 class="with-line">Le BTS SIO à l’EPSI Montpellier</h2>
+                    <p class="text-gray-300 mt-4">
+                        Le BTS Services Informatiques aux Organisations (SIO) est un diplôme de niveau Bac+2 qui forme des professionnels capables de concevoir, développer et maintenir des solutions numériques adaptées aux besoins des entreprises et des organisations. <br>
+                        <br>
+                        Cette formation allie des enseignements techniques (programmation, bases de données, administration des systèmes et réseaux, sécurité informatique) et des enseignements de gestion de projet (communication, organisation, méthodologie), afin de préparer les étudiants à intervenir dans des contextes professionnels variés. <br>
+                        <br>
+                        Le BTS SIO propose deux spécialisations : <br>
+                        • SLAM (Solutions Logicielles et Applications Métiers) : orientée vers le développement web, mobile et logiciel, ainsi que la gestion et l’exploitation des bases de données. <br>
+                        • SISR (Solutions d’Infrastructure, Systèmes et Réseaux) : centrée sur l’installation, la maintenance et la sécurisation des infrastructures réseaux et systèmes. <br>
+                        <br>
+                        À l’EPSI Montpellier, le BTS SIO met l’accent sur l’apprentissage par la pratique, grâce à des projets concrets, des mises en situation et des stages en entreprise. L’objectif est de former des techniciens capables de répondre rapidement aux besoins numériques des organisations, tout en offrant la possibilité de poursuivre des études dans le domaine de l’informatique.
+                    </p>
+                </div>
+            </div>
+        </main>
+
+        <footer class="bg-gray-800 text-gray-400 p-4 border-t border-gray-700">
+            <div class="footer-content mx-auto text-center">
+                <p class="text-center">&copy; 2024 ROUSTAN-LABOURET ALBIN. Tous droits réservés.</p>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/navigation.js"></script>
+</body>
+</html> 
