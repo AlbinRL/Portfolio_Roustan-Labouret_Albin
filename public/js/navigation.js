@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
     // Charger la navigation (chemin root-relatif pour fonctionner depuis n'importe quelle page)
-    fetch('/public/components/nav.html')
+    fetch('/components/nav.html')
         .then(response => response.text())
         .then(data => {
             document.getElementById('nav-container').innerHTML = data;
