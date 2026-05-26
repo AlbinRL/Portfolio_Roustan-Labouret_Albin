@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 activeNavId = 'nav-parcour';
             } else if (path.includes('competences')) {
                 activeNavId = 'nav-competences';
-            } else if (path.includes('e5')) {
+            } else if (path.includes('e5') || path.includes('e6')) {
                 activeNavId = 'nav-e5';
             } else if (path.includes('veilles')) {
                 activeNavId = 'nav-veilles';
