@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Portfolio - Projets de fin de BTS</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles/global.css">
+    <link rel="stylesheet" href="styles/nav.css">
+</head>
+<body class="flex bg-gray-900">
+    <!-- Conteneur pour la navigation -->
+    <div id="nav-container"></div>
+
+    <div class="flex-1 flex flex-col min-h-screen">
+    <!-- Contenu principal -->
+    <main class="flex-1 bg-gray-900 ml-64">
+        <div class="container mx-auto p-8">
+            <h1 class="text-4xl font-bold text-center mb-4 text-white">Projets de fin de BTS</h1>
+            <p class="text-center text-xl text-gray-400 mb-12 max-w-3xl mx-auto">
+                Mes deux projets de fin de BTS SIO (option SLAM), présentés dans le cadre de l'épreuve E6.
+            </p>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-gray-800 p-6 rounded-lg shadow-xl border border-gray-700">
+                    <p class="text-sm text-blue-400 font-medium mb-1">Projet 1</p>
+                    <h2 class="with-line">Site web de gestion et réservation</h2>
+                    <p class="text-gray-300 mt-2">
+                        Développement d'une application web pour planifier l'occupation des locaux en flex-office : réservation de bureaux et salles, interfaces collaborateur, directeur d'agence et administrateur. Stack Next.js, NestJS, PostgreSQL, Prisma et JWT.
+                    </p>
+                    <div class="mt-4">
+                        <a href="assets/e5/situation-1.pdf" target="_blank" rel="noopener" class="inline-block bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 transition-colors">
+                            <i class="fas fa-file-pdf mr-2"></i> Voir le dossier (PDF)
+                        </a>
+                    </div>
+                </div>
+                <div class="bg-gray-800 p-6 rounded-lg shadow-xl border border-gray-700">
+                    <p class="text-sm text-blue-400 font-medium mb-1">Projet 2</p>
+                    <h2 class="with-line">Application mobile de gestion et réservation</h2>
+                    <p class="text-gray-300 mt-2">
+                        Application mobile connectée au même écosystème pour réserver et gérer les espaces de travail en déplacement. Interfaces collaborateur, responsable de site et administrateur. Stack React Native, Expo, NestJS, PostgreSQL, Prisma et JWT.
+                    </p>
+                    <div class="mt-4">
+                        <a href="assets/e5/situation-2.pdf" target="_blank" rel="noopener" class="inline-block bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 transition-colors">
+                            <i class="fas fa-file-pdf mr-2"></i> Voir le dossier (PDF)
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-gray-800 text-gray-400 p-4 border-t border-gray-700">
+        <div class="footer-content mx-auto text-center">
+            <p class="text-center">&copy; 2024 ROUSTAN-LABOURET ALBIN. Tous droits réservés.</p>
+        </div>
+    </footer>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/navigation.js"></script>
+</body>
+</html>
