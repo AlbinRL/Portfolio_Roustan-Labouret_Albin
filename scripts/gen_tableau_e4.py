@@ -11,6 +11,7 @@ sections = [
         ("Création d'un portfolio personnel", "02/02/2025 au 30/05/2025", ["X", None, "X", None, None, "X"]),
     ]),
     ("RÉALISATIONS EN COURS DE FORMATION EN SECONDE ANNÉE", [
+        ("Calle porte détecteur de mouvements", "29/10/2025 au 15/09/2025", ["X", None, None, "X", None, None]),
         ("Application flutter avec androide studio", "20h", ["X", None, None, "X", "X", "X"]),
         ("Site en Vue.js", "25/11/2025 au 25/12/2025", [None, None, "X", "X", None, "X"]),
     ]),
@@ -34,11 +35,11 @@ sections = [
         ),
     ]),
     ("RÉALISATIONS EN MILIEU PROFESSIONNEL EN SECONDE ANNÉE", [
-        ("Réalisation d'un site de streaming (html, css, php, js).", "—", ["X", None, None, "X", None, "X"]),
-        ("Conception de la base de données d'un site de streaming.", "—", ["X", None, None, "X", None, None]),
+        ("Réalisation d'un site de streaming (html, css, php, js).", "05/01/2026 au 27/02/2026", ["X", None, None, "X", None, "X"]),
+        ("Conception de la base de données d'un site de streaming.", "05/01/2026 au 27/02/2026", ["X", None, None, "X", None, None]),
         (
             "Mise en place d'une machine virtuelle pour l'hébergement d'un site web. (VMware)",
-            "—",
+            "05/01/2026 au 27/02/2026",
             ["X", None, None, None, "X", None],
         ),
     ]),
