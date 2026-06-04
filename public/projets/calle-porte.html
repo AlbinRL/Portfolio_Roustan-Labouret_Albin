@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calle porte — détecteur de mouvements</title>
+    <title>Calle porte espion — détecteur de mouvements</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="/styles/global.css">
@@ -16,28 +16,67 @@
         <main class="flex-1 bg-gray-900 ml-64">
             <div class="container mx-auto p-8 max-w-4xl">
                 <a href="projets.html#projets-2eme" class="text-blue-400 hover:underline">← Retour aux projets</a>
-                <p class="text-sm text-blue-400 font-medium mt-4 mb-1">SN2 · Oct. 2025</p>
-                <h1 class="text-4xl font-bold text-white mt-2 mb-6">Calle porte — détecteur de mouvements</h1>
+                <p class="text-sm text-blue-400 font-medium mt-4 mb-1">SN2 · Groupe de 4</p>
+                <h1 class="text-4xl font-bold text-white mt-2 mb-2">Calle porte — détecteur de mouvements</h1>
+                <p class="text-lg text-blue-300 mb-6">Objet espion style 007 : alerte dès qu'une personne entre dans la pièce</p>
                 <div class="flex flex-wrap gap-2 mb-8 text-xs">
                     <span class="px-2 py-1 rounded-full bg-orange-500/10 border border-orange-500/30 text-orange-300">Arduino</span>
-                    <span class="px-2 py-1 rounded-full bg-gray-700 border border-gray-600 text-gray-300">Capteurs</span>
+                    <span class="px-2 py-1 rounded-full bg-teal-500/10 border border-teal-500/30 text-teal-300">Capteur de mouvement</span>
+                    <span class="px-2 py-1 rounded-full bg-orange-500/10 border border-orange-500/30 text-orange-300">Fusion 360</span>
+                    <span class="px-2 py-1 rounded-full bg-gray-700 border border-gray-600 text-gray-300">Impression 3D</span>
                 </div>
+
                 <section class="bg-gray-800 p-6 rounded-lg shadow-xl border border-gray-700 mb-6">
                     <h2 class="with-line text-white text-xl font-semibold mb-4">Contexte</h2>
-                    <p class="text-gray-300 leading-relaxed">Projet embarqué autour d'une porte de calle équipée d'un détecteur de mouvement : déclencher une alerte ou un signal lumineux/sonore lors du passage, en lien avec la gestion du patrimoine ou la sécurité d'accès.</p>
+                    <p class="text-gray-300 leading-relaxed">
+                        Ce projet consistait à réaliser un <strong class="text-blue-200">objet espion à la James Bond (007)</strong>, en équipe de <strong class="text-blue-200">quatre personnes</strong>. Nous avons choisi de concevoir une <strong class="text-blue-200">calle porte</strong> dissimulée : dès que quelqu'un franchit le seuil et entre dans une pièce, le système le détecte et déclenche une alerte sur un appareil distant (par exemple un ordinateur).
+                    </p>
                 </section>
+
                 <section class="bg-gray-800 p-6 rounded-lg shadow-xl border border-gray-700 mb-6">
                     <h2 class="with-line text-white text-xl font-semibold mb-4">Objectifs</h2>
-                    <ul class="text-gray-300 list-disc list-inside space-y-2">
-                        <li>Câbler capteur PIR (ou équivalent), microcontrôleur et actionneur.</li>
-                        <li>Programmer la détection et le traitement du signal.</li>
-                        <li>Documenter l'installation et les tests.</li>
+                    <ul class="text-gray-300 list-disc list-inside space-y-2 leading-relaxed">
+                        <li>Concevoir un boîtier discret et fonctionnel (thème espion).</li>
+                        <li>Modéliser la calle porte en 3D puis la fabriquer par impression 3D.</li>
+                        <li>Intégrer Arduino et un capteur de mouvement pour détecter les passages.</li>
+                        <li>Envoyer une alerte vers un poste (ordinateur) lors d'une intrusion détectée.</li>
+                        <li>Travailler en projet d'équipe : répartition des rôles et livraison du prototype.</li>
                     </ul>
                 </section>
+
                 <section class="bg-gray-800 p-6 rounded-lg shadow-xl border border-gray-700 mb-6">
                     <h2 class="with-line text-white text-xl font-semibold mb-4">Réalisations</h2>
-                    <p class="text-gray-300 leading-relaxed">Montage sur breadboard ou boîtier, sketch Arduino pour lire le capteur et activer LED/buzzer, réglage de sensibilité et anti-rebond, schéma de câblage et compte-rendu de validation sur site ou maquette.</p>
+                    <div class="text-gray-300 leading-relaxed space-y-4">
+                        <div>
+                            <span class="block text-blue-200 font-semibold mb-1">Conception &amp; fabrication</span>
+                            <p>Modélisation de la calle porte dans <strong class="text-blue-200">Fusion 360</strong>, puis impression 3D des pièces pour obtenir un objet prêt à accueillir l'électronique et à être posé au sol, au seuil d'une porte.</p>
+                        </div>
+                        <div>
+                            <span class="block text-blue-200 font-semibold mb-1">Électronique &amp; détection</span>
+                            <p>Montage autour d'une carte <strong class="text-blue-200">Arduino</strong> et d'un <strong class="text-blue-200">capteur de mouvement</strong> : détection du passage d'une personne dans la pièce, traitement du signal côté microcontrôleur.</p>
+                        </div>
+                        <div>
+                            <span class="block text-blue-200 font-semibold mb-1">Alerte distante</span>
+                            <p>Lorsqu'un mouvement est détecté, envoi d'une <strong class="text-blue-200">alerte vers un appareil</strong> (ordinateur) pour simuler un système de surveillance espion — notification ou message côté poste de réception.</p>
+                        </div>
+                        <div>
+                            <span class="block text-blue-200 font-semibold mb-1">Travail en équipe</span>
+                            <p>Coordination du groupe de 4 (CAO, impression, code Arduino, tests et intégration), essais en conditions réelles et présentation du prototype.</p>
+                        </div>
+                    </div>
                 </section>
+
+                <section class="bg-gray-800 p-6 rounded-lg shadow-xl border border-gray-700 mb-6">
+                    <h2 class="with-line text-white text-xl font-semibold mb-4">Technologies &amp; outils</h2>
+                    <div class="text-gray-300 text-sm leading-relaxed space-y-2">
+                        <div class="rounded-md border border-gray-600/70 bg-gray-800/60 px-3 py-2"><strong class="text-blue-200">Autodesk Fusion 360</strong> — modélisation 3D de la calle porte</div>
+                        <div class="rounded-md border border-gray-600/70 bg-gray-800/60 px-3 py-2"><strong class="text-blue-200">Impression 3D</strong> — fabrication du boîtier / calle</div>
+                        <div class="rounded-md border border-gray-600/70 bg-gray-800/60 px-3 py-2"><strong class="text-blue-200">Arduino</strong> — programmation et gestion des entrées capteur</div>
+                        <div class="rounded-md border border-gray-600/70 bg-gray-800/60 px-3 py-2"><strong class="text-blue-200">Capteur de mouvement</strong> — détection d'intrusion dans la pièce</div>
+                        <div class="rounded-md border border-gray-600/70 bg-gray-800/60 px-3 py-2"><strong class="text-blue-200">Liaison vers PC</strong> — remontée d'alerte sur ordinateur</div>
+                    </div>
+                </section>
+
                 <section class="bg-gray-800 p-6 rounded-lg shadow-xl border border-gray-700">
                     <h2 class="with-line text-white text-xl font-semibold mb-4">Compétences mobilisées (E4)</h2>
                     <ul class="text-gray-300 list-disc list-inside space-y-2 leading-relaxed">
