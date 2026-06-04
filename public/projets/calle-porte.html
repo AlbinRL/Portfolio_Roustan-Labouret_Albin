@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calle porte — détecteur de mouvements</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="/styles/global.css">
+    <link rel="stylesheet" href="/styles/nav.css">
+</head>
+<body class="flex bg-gray-900">
+    <div id="nav-container"></div>
+    <div class="flex-1 flex flex-col min-h-screen">
+        <main class="flex-1 bg-gray-900 ml-64">
+            <div class="container mx-auto p-8 max-w-4xl">
+                <a href="projets.html#projets-2eme" class="text-blue-400 hover:underline">← Retour aux projets</a>
+                <p class="text-sm text-blue-400 font-medium mt-4 mb-1">SN2 · Oct. 2025</p>
+                <h1 class="text-4xl font-bold text-white mt-2 mb-6">Calle porte — détecteur de mouvements</h1>
+                <div class="flex flex-wrap gap-2 mb-8 text-xs">
+                    <span class="px-2 py-1 rounded-full bg-orange-500/10 border border-orange-500/30 text-orange-300">Arduino</span>
+                    <span class="px-2 py-1 rounded-full bg-gray-700 border border-gray-600 text-gray-300">Capteurs</span>
+                </div>
+                <section class="bg-gray-800 p-6 rounded-lg shadow-xl border border-gray-700 mb-6">
+                    <h2 class="with-line">Contexte</h2>
+                    <p class="text-gray-300 leading-relaxed">Projet embarqué autour d'une porte de calle équipée d'un détecteur de mouvement : déclencher une alerte ou un signal lumineux/sonore lors du passage, en lien avec la gestion du patrimoine ou la sécurité d'accès.</p>
+                </section>
+                <section class="bg-gray-800 p-6 rounded-lg shadow-xl border border-gray-700 mb-6">
+                    <h2 class="with-line">Objectifs</h2>
+                    <ul class="text-gray-300 list-disc list-inside space-y-2">
+                        <li>Câbler capteur PIR (ou équivalent), microcontrôleur et actionneur.</li>
+                        <li>Programmer la détection et le traitement du signal.</li>
+                        <li>Documenter l'installation et les tests.</li>
+                    </ul>
+                </section>
+                <section class="bg-gray-800 p-6 rounded-lg shadow-xl border border-gray-700 mb-6">
+                    <h2 class="with-line">Réalisations</h2>
+                    <p class="text-gray-300 leading-relaxed">Montage sur breadboard ou boîtier, sketch Arduino pour lire le capteur et activer LED/buzzer, réglage de sensibilité et anti-rebond, schéma de câblage et compte-rendu de validation sur site ou maquette.</p>
+                </section>
+                <section class="bg-gray-800 p-6 rounded-lg shadow-xl border border-gray-700">
+                    <h2 class="with-line">Compétences mobilisées (E4)</h2>
+                    <p class="text-gray-300">G1, T4</p>
+                </section>
+            </div>
+        </main>
+        <footer class="bg-gray-800 text-gray-400 p-4 border-t border-gray-700">
+            <div class="footer-content mx-auto text-center"><p>&copy; 2024 ROUSTAN-LABOURET ALBIN. Tous droits réservés.</p></div>
+        </footer>
+    </div>
+    <script src="/js/navigation.js"></script>
+</body>
+</html>
