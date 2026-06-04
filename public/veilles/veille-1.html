@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Veille 1 - Détails</title>
+    <title>Résumé - Veille robotique</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="../styles/global.css">
@@ -15,29 +15,119 @@
     <div class="flex-1 flex flex-col min-h-screen">
         <main class="flex-1 bg-gray-900 ml-64">
             <div class="container mx-auto p-8">
-                <a href="/veilles.html" class="text-blue-400 hover:underline">← Retour aux veilles</a>
-                <h1 class="text-4xl font-bold text-white mt-4 mb-6">Veille 1</h1>
+                <a href="../veilles.html" class="text-blue-400 hover:underline">← Retour aux veilles</a>
+                <p class="text-sm text-blue-400 font-medium mt-4 mb-1">Veille 1 · SN1 · 2024-2025</p>
+                <h1 class="text-4xl font-bold text-white mt-2 mb-6">Le rôle de la robotique dans la société moderne</h1>
+
+                <div class="mb-6 flex flex-wrap gap-3">
+                    <a href="../assets/veilles/veille-1-sn1.pdf" target="_blank" rel="noopener" class="inline-flex items-center bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors">
+                        <i class="fas fa-file-pdf mr-2"></i> Ouvrir le document complet (PDF)
+                    </a>
+                </div>
 
                 <section class="bg-gray-800 p-6 rounded-lg shadow-xl border border-gray-700">
-                    <h2 class="with-line">Sujet & Objectifs</h2>
-                    <p class="text-gray-300">Décris ici le thème, le contexte et l’objectif de ta veille.</p>
+                    <h2 class="with-line">Introduction</h2>
+                    <p class="text-gray-300 leading-relaxed">
+                        La robotique transforme de plus en plus l’industrie, la production et le quotidien. Cette veille explore comment elle redéfinit l’économie, les liens sociaux et les usages humains, en s’interrogeant sur ses opportunités (efficacité, sécurité, innovation) et ses limites (éthique, emploi, dépendance technologique).
+                    </p>
                 </section>
 
                 <section class="bg-gray-800 p-6 rounded-lg shadow-xl border border-gray-700 mt-8">
-                    <h2 class="with-line">Enseignements clés</h2>
-                    <ul class="text-gray-300 list-disc list-inside space-y-2">
-                        <li>Insight important n°1</li>
-                        <li>Insight important n°2</li>
-                        <li>Impact pour tes projets</li>
+                    <h2 class="with-line">Méthodologie & outils</h2>
+                    <p class="text-gray-300 leading-relaxed mb-4">
+                        La veille a été menée sur plusieurs semaines avec une méthode <strong class="text-blue-200">pull</strong> (Google Alertes pour recevoir des articles d’actualité), complétée par une méthode <strong class="text-blue-200">push</strong> (recherches ciblées pour approfondir chaque thème de la synthèse).
+                    </p>
+                    <ul class="text-gray-300 text-sm leading-relaxed space-y-2">
+                        <li class="rounded-md border border-gray-600/70 bg-gray-800/60 px-3 py-2">Google Alertes, Google Search, Google Docs</li>
+                        <li class="rounded-md border border-gray-600/70 bg-gray-800/60 px-3 py-2">Word, Grammalecte, ChatGPT (tri et lecture d’articles)</li>
                     </ul>
                 </section>
 
                 <section class="bg-gray-800 p-6 rounded-lg shadow-xl border border-gray-700 mt-8">
+                    <h2 class="with-line">Synthèse par axes</h2>
+                    <div class="text-gray-300 text-sm leading-relaxed space-y-4">
+                        <div>
+                            <span class="block text-blue-200 font-semibold mb-1">1. Guerre moderne</span>
+                            <div class="rounded-md border border-gray-600/70 bg-gray-800/60 px-3 py-2">
+                                Exemple des camions militaires autonomes (projet SPARK, 40 tonnes) : réduction des risques pour les soldats et meilleure logistique, mais vulnérabilité accrue des convois sans défense humaine.
+                            </div>
+                        </div>
+                        <div>
+                            <span class="block text-blue-200 font-semibold mb-1">2. Environnement & société</span>
+                            <div class="rounded-md border border-gray-600/70 bg-gray-800/60 px-3 py-2">
+                                Robots planteurs de mangrove pour lutter contre l’érosion des littoraux : illustration d’une robotique au service de la transition écologique.
+                            </div>
+                        </div>
+                        <div>
+                            <span class="block text-blue-200 font-semibold mb-1">3. Santé & éducation</span>
+                            <div class="rounded-md border border-gray-600/70 bg-gray-800/60 px-3 py-2">
+                                Assistance chirurgicale par robot (centre Jean-Perrin) et compétitions de programmation/robotique (Concours DIA) : la robotique devient un outil médical et pédagogique.
+                            </div>
+                        </div>
+                        <div>
+                            <span class="block text-blue-200 font-semibold mb-1">4. IA & impact social</span>
+                            <div class="rounded-md border border-gray-600/70 bg-gray-800/60 px-3 py-2">
+                                Enjeux d’emploi et de digitalisation industrielle (ex. suppressions de postes chez Siemens) : la robotique et l’IA interrogent le futur du travail.
+                            </div>
+                        </div>
+                        <div>
+                            <span class="block text-blue-200 font-semibold mb-1">5. Homme-robot</span>
+                            <div class="rounded-md border border-gray-600/70 bg-gray-800/60 px-3 py-2">
+                                Évolution vers des robots plus agiles et interactifs (« intelligence physique »), avec des usages possibles en secours, exploration ou surveillance.
+                            </div>
+                        </div>
+                        <div>
+                            <span class="block text-blue-200 font-semibold mb-1">6. Mobilité</span>
+                            <div class="rounded-md border border-gray-600/70 bg-gray-800/60 px-3 py-2">
+                                Projets Optimus (Tesla) et Corleo (Kawasaki) : la robotique vise à réinventer les transports, la logistique et l’assistance, avec des concepts encore largement expérimentaux.
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="bg-gray-800 p-6 rounded-lg shadow-xl border border-gray-700 mt-8">
+                    <h2 class="with-line">Conclusion</h2>
+                    <p class="text-gray-300 leading-relaxed">
+                        La robotique dépasse désormais le cadre industriel pour toucher la santé, l’éducation, l’environnement et la mobilité. Elle apporte des réponses concrètes tout en soulevant des questions éthiques, sociales et économiques. L’enjeu est de suivre ces évolutions avec un regard critique, documenté et curieux.
+                    </p>
+                </section>
+
+                <section class="bg-gray-800 p-6 rounded-lg shadow-xl border border-gray-700 mt-8">
                     <h2 class="with-line">Sources</h2>
-                    <ul class="text-gray-300 list-disc list-inside space-y-1">
-                        <li>Article 1</li>
-                        <li>Documentation 2</li>
-                        <li>Vidéo 3</li>
+                    <ul class="text-gray-300 text-sm leading-relaxed space-y-2">
+                        <li class="rounded-md border border-gray-600/70 bg-gray-800/60 px-3 py-2">
+                            <a href="https://www.innovant.fr/2025/03/22/les-robots-prennent-le-volant-avec-40-tonnes-de-metal-ces-camions-militaires-us-deviennent-autonomes-et-redefinissent-la-guerre-moderne/" target="_blank" rel="noopener" class="text-blue-400 hover:text-blue-300 hover:underline">Innovant.fr</a> — Les robots prennent le volant : camions militaires US autonomes
+                        </li>
+                        <li class="rounded-md border border-gray-600/70 bg-gray-800/60 px-3 py-2">
+                            <a href="https://vivredemain.fr/2025/03/23/une-revolution-verte-en-marche-ce-robot-planteur-de-mangrove-protege-les-littoraux-de-lerosion-a-une-vitesse-jamais-atteinte/" target="_blank" rel="noopener" class="text-blue-400 hover:text-blue-300 hover:underline">Vivredemain.fr</a> — Robot planteur de mangrove contre l’érosion
+                        </li>
+                        <li class="rounded-md border border-gray-600/70 bg-gray-800/60 px-3 py-2">
+                            <a href="https://www.semeur.com/actualite-5664-clermont-ferrand-au-centre-jean-perrin-un-robot-comme-nouvel-allie-des-chirurgiens" target="_blank" rel="noopener" class="text-blue-400 hover:text-blue-300 hover:underline">Semeur.com</a> — Robot chirurgical au centre Jean-Perrin (Clermont-Ferrand)
+                        </li>
+                        <li class="rounded-md border border-gray-600/70 bg-gray-800/60 px-3 py-2">
+                            <a href="https://lestrepublicain.com/2025/04/05/concours-dia-programmation-et-robotique-a-constantine-une-competition-mondiale-et-plus-de-440-concurrents/" target="_blank" rel="noopener" class="text-blue-400 hover:text-blue-300 hover:underline">L’Est Républicain</a> — Concours DIA, programmation et robotique à Constantine
+                        </li>
+                        <li class="rounded-md border border-gray-600/70 bg-gray-800/60 px-3 py-2">
+                            <a href="https://dailygeekshow.com/intelligence-artificielle-google/" target="_blank" rel="noopener" class="text-blue-400 hover:text-blue-300 hover:underline">Daily Geek Show</a> — Intelligence artificielle de Google
+                        </li>
+                        <li class="rounded-md border border-gray-600/70 bg-gray-800/60 px-3 py-2">
+                            <a href="https://www.lapresse.ca/actualites/chroniques/2025-04-06/non-poilievre-ne-possede-pas-25-millions.php" target="_blank" rel="noopener" class="text-blue-400 hover:text-blue-300 hover:underline">La Presse</a> — Siemens et digitalisation industrielle (Les Échos)
+                        </li>
+                        <li class="rounded-md border border-gray-600/70 bg-gray-800/60 px-3 py-2">
+                            <a href="https://www.sciencesetavenir.fr/high-tech/robot/de-l-intelligence-physique-dans-les-robots_184990" target="_blank" rel="noopener" class="text-blue-400 hover:text-blue-300 hover:underline">Sciences et Avenir</a> — De l’intelligence physique dans les robots
+                        </li>
+                        <li class="rounded-md border border-gray-600/70 bg-gray-800/60 px-3 py-2">
+                            <a href="https://techguru.fr/2025/03/23/aussi-agile-quun-ecureuil-en-fuite-ce-robot-a-une-seule-jambe-bondit-de-branche-en-branche-avec-une-precision-animale-bluffante/" target="_blank" rel="noopener" class="text-blue-400 hover:text-blue-300 hover:underline">TechGuru.fr</a> — Robot agile à une jambe
+                        </li>
+                        <li class="rounded-md border border-gray-600/70 bg-gray-800/60 px-3 py-2">
+                            <a href="https://gagadget.com/fr/608842-les-grands-projets-de-musk-il-prevoit-de-produire-5-000-robots-optimus-en-2025-la-production-atteignant-50-000-unites-en-2026/" target="_blank" rel="noopener" class="text-blue-400 hover:text-blue-300 hover:underline">Gagadget</a> — Robots Optimus d’Elon Musk
+                        </li>
+                        <li class="rounded-md border border-gray-600/70 bg-gray-800/60 px-3 py-2">
+                            <a href="https://gagadget.com/fr/617241-kawasaki-a-devoile-le-concept-de-cheval-robot-corleo-un-moyen-de-transport-futuriste-impressionnant/" target="_blank" rel="noopener" class="text-blue-400 hover:text-blue-300 hover:underline">Gagadget</a> — Cheval robot Corleo (Kawasaki)
+                        </li>
+                        <li class="rounded-md border border-gray-600/70 bg-gray-800/60 px-3 py-2">
+                            <a href="https://youtu.be/445K716GYCk?si=1F5Dglq3J4xNOeWh" target="_blank" rel="noopener" class="text-blue-400 hover:text-blue-300 hover:underline">YouTube</a> — Nouvelle Kawasaki Corleo dévoilée
+                        </li>
                     </ul>
                 </section>
             </div>
@@ -53,5 +143,3 @@
     <script src="../js/navigation.js"></script>
 </body>
 </html>
-
-
