@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Veille 2 - Détails</title>
+    <title>Résumé - Veille outils de développement</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="../styles/global.css">
@@ -15,29 +15,100 @@
     <div class="flex-1 flex flex-col min-h-screen">
         <main class="flex-1 bg-gray-900 ml-64">
             <div class="container mx-auto p-8">
-                <a href="/veilles.html" class="text-blue-400 hover:underline">← Retour aux veilles</a>
-                <h1 class="text-4xl font-bold text-white mt-4 mb-6">Veille 2</h1>
+                <a href="../veilles.html" class="text-blue-400 hover:underline">← Retour aux veilles</a>
+                <p class="text-sm text-blue-400 font-medium mt-4 mb-1">Veille 2 · SN2 · 2025-2026</p>
+                <h1 class="text-4xl font-bold text-white mt-2 mb-6">Révolution des outils de développement</h1>
+
+                <div class="mb-6 flex flex-wrap gap-3">
+                    <a href="../assets/veilles/veille-2-sn2.pdf" target="_blank" rel="noopener" class="inline-flex items-center bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors">
+                        <i class="fas fa-file-pdf mr-2"></i> Ouvrir le document complet (PDF)
+                    </a>
+                </div>
 
                 <section class="bg-gray-800 p-6 rounded-lg shadow-xl border border-gray-700">
-                    <h2 class="with-line">Sujet & Objectifs</h2>
-                    <p class="text-gray-300">Décris ici le thème, le contexte et l’objectif de ta veille.</p>
+                    <h2 class="with-line">Introduction</h2>
+                    <p class="text-gray-300 leading-relaxed">
+                        Le développement logiciel connaît une double évolution : les assistants IA deviennent des agents autonomes capables de planifier, coder et soumettre des Pull Requests, tandis que les environnements de travail migrent du poste local vers le cloud (CDE). Cette veille (février – mai 2026) analyse ces deux tendances et leurs enjeux (sécurité, souveraineté, coûts).
+                    </p>
                 </section>
 
                 <section class="bg-gray-800 p-6 rounded-lg shadow-xl border border-gray-700 mt-8">
-                    <h2 class="with-line">Enseignements clés</h2>
-                    <ul class="text-gray-300 list-disc list-inside space-y-2">
-                        <li>Insight important n°1</li>
-                        <li>Insight important n°2</li>
-                        <li>Impact pour tes projets</li>
+                    <h2 class="with-line">Méthodologie & outils</h2>
+                    <p class="text-gray-300 leading-relaxed mb-4">
+                        Veille sur quatre mois combinant une approche <strong class="text-blue-200">pull</strong> (Google Alertes sur agents IA, Copilot Workspace, Devin, CDE, devcontainer.json…) et une approche <strong class="text-blue-200">push</strong> (Feedly, TLDR Web Dev, GitHub Changelog, Dev.to, conférences Google I/O, GitHub Universe, Microsoft Build).
+                    </p>
+                    <ul class="text-gray-300 text-sm leading-relaxed space-y-2">
+                        <li class="rounded-md border border-gray-600/70 bg-gray-800/60 px-3 py-2">Google Alertes, Feedly, Notion, Google Docs, Gemini</li>
                     </ul>
                 </section>
 
-                    <section class="bg-gray-800 p-6 rounded-lg shadow-xl border border-gray-700 mt-8">
+                <section class="bg-gray-800 p-6 rounded-lg shadow-xl border border-gray-700 mt-8">
+                    <h2 class="with-line">Synthèse par axes</h2>
+                    <div class="text-gray-300 text-sm leading-relaxed space-y-4">
+                        <div>
+                            <span class="block text-blue-200 font-semibold mb-1">Axe 1 — Agents IA autonomes</span>
+                            <div class="rounded-md border border-gray-600/70 bg-gray-800/60 px-3 py-2">
+                                Passage de l’auto-complétion (Copilot classique) à des agents planifiant et exécutant des tâches : Devin (Cognition AI), GitHub Copilot Workspace, Claude Code, Cursor Agents. Enjeux : qualité du code généré, sécurité des sandboxes, dépendance aux fournisseurs et évolution du rôle du développeur.
+                            </div>
+                        </div>
+                        <div>
+                            <span class="block text-blue-200 font-semibold mb-1">Axe 2 — Cloud Development Environments (CDE)</span>
+                            <div class="rounded-md border border-gray-600/70 bg-gray-800/60 px-3 py-2">
+                                Fin du « ça marchait sur ma machine » grâce au standard devcontainer.json et aux plateformes (GitHub Codespaces, Gitpod, Coder, DevPod). Les environnements éphémères améliorent reproductibilité, onboarding et isolation — notamment pour les agents IA. Questions de coûts et de souveraineté des données (RGPD, hébergement on-premise).
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="bg-gray-800 p-6 rounded-lg shadow-xl border border-gray-700 mt-8">
+                    <h2 class="with-line">Conclusion</h2>
+                    <p class="text-gray-300 leading-relaxed">
+                        Les agents IA et les CDE convergent : les agents ont besoin d’environnements isolés et reproductibles, que les CDE fournissent. Le développeur reste central sur l’architecture, la revue de code et les décisions métier, dans un écosystème où l’outillage et la maîtrise des risques deviennent des compétences clés.
+                    </p>
+                </section>
+
+                <section class="bg-gray-800 p-6 rounded-lg shadow-xl border border-gray-700 mt-8">
                     <h2 class="with-line">Sources</h2>
-                    <ul class="text-gray-300 list-disc list-inside space-y-1">
-                        <li>Article 1</li>
-                        <li>Documentation 2</li>
-                        <li>Vidéo 3</li>
+                    <p class="text-gray-400 text-sm mb-3">Agents IA autonomes</p>
+                    <ul class="text-gray-300 text-sm leading-relaxed space-y-2 mb-4">
+                        <li class="rounded-md border border-gray-600/70 bg-gray-800/60 px-3 py-2">
+                            <a href="https://github.blog/2024-04-29-github-copilot-workspace/" target="_blank" rel="noopener" class="text-blue-400 hover:text-blue-300 hover:underline">The GitHub Blog</a> — Introducing GitHub Copilot Workspace
+                        </li>
+                        <li class="rounded-md border border-gray-600/70 bg-gray-800/60 px-3 py-2">
+                            <a href="https://www.cognition.ai/introducing-devin" target="_blank" rel="noopener" class="text-blue-400 hover:text-blue-300 hover:underline">Cognition AI</a> — Introducing Devin
+                        </li>
+                        <li class="rounded-md border border-gray-600/70 bg-gray-800/60 px-3 py-2">
+                            <a href="https://www.anthropic.com/claude-code" target="_blank" rel="noopener" class="text-blue-400 hover:text-blue-300 hover:underline">Anthropic</a> — Claude Code
+                        </li>
+                        <li class="rounded-md border border-gray-600/70 bg-gray-800/60 px-3 py-2">
+                            <a href="https://cursor.sh/docs/agents" target="_blank" rel="noopener" class="text-blue-400 hover:text-blue-300 hover:underline">Cursor</a> — Cursor Agents (documentation)
+                        </li>
+                        <li class="rounded-md border border-gray-600/70 bg-gray-800/60 px-3 py-2">
+                            <a href="https://www.swebench.com/" target="_blank" rel="noopener" class="text-blue-400 hover:text-blue-300 hover:underline">SWE-bench</a> — Benchmark des agents IA sur issues GitHub
+                        </li>
+                        <li class="rounded-md border border-gray-600/70 bg-gray-800/60 px-3 py-2">The New Stack — From Code Completion to Autonomous Agents</li>
+                        <li class="rounded-md border border-gray-600/70 bg-gray-800/60 px-3 py-2">InfoQ — AI Coding Agents: Promises, Pitfalls and Security Risks</li>
+                        <li class="rounded-md border border-gray-600/70 bg-gray-800/60 px-3 py-2">The Pragmatic Engineer — How engineering teams use AI agents in 2025</li>
+                    </ul>
+                    <p class="text-gray-400 text-sm mb-3">Cloud Development Environments</p>
+                    <ul class="text-gray-300 text-sm leading-relaxed space-y-2">
+                        <li class="rounded-md border border-gray-600/70 bg-gray-800/60 px-3 py-2">
+                            <a href="https://github.blog/changelog/label/codespaces/" target="_blank" rel="noopener" class="text-blue-400 hover:text-blue-300 hover:underline">GitHub Changelog</a> — GitHub Codespaces
+                        </li>
+                        <li class="rounded-md border border-gray-600/70 bg-gray-800/60 px-3 py-2">
+                            <a href="https://www.gitpod.io/blog/localhost-is-legacy" target="_blank" rel="noopener" class="text-blue-400 hover:text-blue-300 hover:underline">Gitpod Blog</a> — Why Localhost is a Legacy Concept
+                        </li>
+                        <li class="rounded-md border border-gray-600/70 bg-gray-800/60 px-3 py-2">
+                            <a href="https://coder.com/docs/v2" target="_blank" rel="noopener" class="text-blue-400 hover:text-blue-300 hover:underline">Coder</a> — Documentation (self-hosted CDE)
+                        </li>
+                        <li class="rounded-md border border-gray-600/70 bg-gray-800/60 px-3 py-2">
+                            <a href="https://devpod.sh/docs" target="_blank" rel="noopener" class="text-blue-400 hover:text-blue-300 hover:underline">DevPod</a> — Documentation officielle
+                        </li>
+                        <li class="rounded-md border border-gray-600/70 bg-gray-800/60 px-3 py-2">
+                            <a href="https://containers.dev/" target="_blank" rel="noopener" class="text-blue-400 hover:text-blue-300 hover:underline">Dev Containers</a> — Spécification devcontainer.json
+                        </li>
+                        <li class="rounded-md border border-gray-600/70 bg-gray-800/60 px-3 py-2">InfoQ — The Rise of Cloud Dev Environments in Enterprise</li>
+                        <li class="rounded-md border border-gray-600/70 bg-gray-800/60 px-3 py-2">Console.dev — CDE Benchmark 2025</li>
                     </ul>
                 </section>
             </div>
@@ -53,5 +124,3 @@
     <script src="../js/navigation.js"></script>
 </body>
 </html>
-
-
