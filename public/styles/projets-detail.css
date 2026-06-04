@@ -1,0 +1,7 @@
+/* Titres de section sur pages détail projet (après Tailwind) */
+.page-projet-detail section.bg-gray-800 > h2.with-line {
+    color: #ffffff !important;
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
