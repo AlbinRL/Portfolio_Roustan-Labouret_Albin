@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Solution web — Hôtel Neptune</title>
+    <title>Hotel Neptune — Solution web</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="/styles/global.css">
@@ -17,29 +17,68 @@
             <div class="container mx-auto p-8 max-w-4xl">
                 <a href="projets.html#projets-1ere" class="text-blue-400 hover:underline">← Retour aux projets</a>
                 <p class="text-sm text-blue-400 font-medium mt-4 mb-1">SN1 · Jan. – Mars 2025</p>
-                <h1 class="text-4xl font-bold text-white mt-2 mb-6">Projet solution web — Hôtel Neptune</h1>
+                <h1 class="text-4xl font-bold text-white mt-2 mb-2">Hotel Neptune</h1>
+                <p class="text-lg text-blue-300 mb-6">Projet web complet : présentation, chambres, services, réservations et contact</p>
                 <div class="flex flex-wrap gap-2 mb-8 text-xs">
-                    <span class="px-2 py-1 rounded-full bg-orange-500/10 border border-orange-500/30 text-orange-300">HTML</span>
-                    <span class="px-2 py-1 rounded-full bg-purple-500/10 border border-purple-500/30 text-purple-300">PHP</span>
-                    <span class="px-2 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-emerald-300">MySQL</span>
+                    <span class="px-2 py-1 rounded-full bg-orange-500/10 border border-orange-500/30 text-orange-300">HTML5</span>
+                    <span class="px-2 py-1 rounded-full bg-sky-500/10 border border-sky-500/30 text-sky-300">CSS3</span>
                     <span class="px-2 py-1 rounded-full bg-yellow-500/10 border border-yellow-500/30 text-yellow-300">JavaScript</span>
+                    <span class="px-2 py-1 rounded-full bg-purple-500/10 border border-purple-500/30 text-purple-300">PHP</span>
                 </div>
+
                 <section class="bg-gray-800 p-6 rounded-lg shadow-xl border border-gray-700 mb-6">
                     <h2 class="with-line text-white text-xl font-semibold mb-4">Contexte</h2>
-                    <p class="text-gray-300 leading-relaxed">Projet fil rouge « solution web » pour un hôtel fictif Neptune : site de présentation, gestion des chambres et parcours de réservation en ligne, avec travail en équipe sur plusieurs sprints.</p>
+                    <p class="text-gray-300 leading-relaxed">
+                        Projet fil rouge <strong class="text-blue-200">solution web (Hôtel Neptune)</strong> en 1ère année : réaliser un site vitrine et fonctionnel pour un hôtel fictif, avec pages de présentation, catalogue des chambres, services et un flux de réservation.
+                    </p>
+                    <p class="text-gray-300 leading-relaxed mt-4">
+                        L'interface est <strong class="text-blue-200">responsive</strong> (desktop, tablette, mobile) et pensée pour un parcours fluide : découverte de l'hôtel, exploration des offres, puis réservation.
+                    </p>
                 </section>
+
                 <section class="bg-gray-800 p-6 rounded-lg shadow-xl border border-gray-700 mb-6">
                     <h2 class="with-line text-white text-xl font-semibold mb-4">Objectifs</h2>
-                    <ul class="text-gray-300 list-disc list-inside space-y-2">
-                        <li>Couvrir l'ensemble du cycle projet (expression de besoin, conception, réalisation, recette).</li>
-                        <li>Développer front et back avec persistance des données.</li>
-                        <li>Mettre en production un service utilisable (M5).</li>
+                    <ul class="text-gray-300 list-disc list-inside space-y-2 leading-relaxed">
+                        <li>Proposer une navigation claire : Accueil, Chambres, Services, Réservations, Contact.</li>
+                        <li>Mettre en avant l'hôtel avec des mises en page visuelles (bannières, galeries, visuels spa/piscine).</li>
+                        <li>Présenter le catalogue des chambres et les services (bien-être, restauration, etc.).</li>
+                        <li>Guider la réservation via un formulaire dédié (chambre, dates, coordonnées).</li>
+                        <li>Respecter les bonnes pratiques d'accessibilité et de performance (images, sémantique).</li>
                     </ul>
                 </section>
+
                 <section class="bg-gray-800 p-6 rounded-lg shadow-xl border border-gray-700 mb-6">
                     <h2 class="with-line text-white text-xl font-semibold mb-4">Réalisations</h2>
-                    <p class="text-gray-300 leading-relaxed">Spécifications fonctionnelles, maquettes, modèle de données chambres/réservations/clients, développement PHP avec authentification simple, pages de consultation et formulaire de réservation, tests et documentation utilisateur. Présentation finale devant le formateur.</p>
+                    <div class="text-gray-300 leading-relaxed space-y-4">
+                        <div>
+                            <span class="block text-blue-200 font-semibold mb-1">Pages &amp; contenu</span>
+                            <p><strong class="text-blue-200">Accueil</strong> avec bannière et atouts (spa, piscine, vue). <strong class="text-blue-200">Chambres</strong> : fiches détaillées (Gold, Silver, Diamond, suite familiale…). <strong class="text-blue-200">Services</strong> : bien-être, spa, piscine, terrasse, restauration. <strong class="text-blue-200">Contact</strong> et informations pratiques.</p>
+                        </div>
+                        <div>
+                            <span class="block text-blue-200 font-semibold mb-1">Réservations</span>
+                            <p>Formulaire de réservation pour sélectionner une chambre, des dates et des coordonnées ; traitement côté <strong class="text-blue-200">PHP</strong> pour la gestion du formulaire.</p>
+                        </div>
+                        <div>
+                            <span class="block text-blue-200 font-semibold mb-1">Parcours utilisateur</span>
+                            <p>Découverte de l'hôtel → exploration des chambres → consultation des services → réservation. Accès rapide aux photos, descriptions et niveaux de confort.</p>
+                        </div>
+                        <div>
+                            <span class="block text-blue-200 font-semibold mb-1">Techniques &amp; accessibilité</span>
+                            <p>HTML sémantique, textes alternatifs sur les images, contrastes et focus visibles. Images optimisées (JPG, PNG, WebP). Composants réutilisables (header, footer) et style cohérent sur tout le site.</p>
+                        </div>
+                    </div>
                 </section>
+
+                <section class="bg-gray-800 p-6 rounded-lg shadow-xl border border-gray-700 mb-6">
+                    <h2 class="with-line text-white text-xl font-semibold mb-4">Technologies &amp; outils</h2>
+                    <div class="text-gray-300 text-sm leading-relaxed space-y-2">
+                        <div class="rounded-md border border-gray-600/70 bg-gray-800/60 px-3 py-2"><strong class="text-blue-200">HTML5</strong> — structure sémantique du site</div>
+                        <div class="rounded-md border border-gray-600/70 bg-gray-800/60 px-3 py-2"><strong class="text-blue-200">CSS3</strong> — mise en page responsive et design cohérent</div>
+                        <div class="rounded-md border border-gray-600/70 bg-gray-800/60 px-3 py-2"><strong class="text-blue-200">JavaScript</strong> — interactivité et animations</div>
+                        <div class="rounded-md border border-gray-600/70 bg-gray-800/60 px-3 py-2"><strong class="text-blue-200">PHP</strong> — gestion des formulaires (réservation, contact)</div>
+                    </div>
+                </section>
+
                 <section class="bg-gray-800 p-6 rounded-lg shadow-xl border border-gray-700">
                     <h2 class="with-line text-white text-xl font-semibold mb-4">Compétences mobilisées (E4)</h2>
                     <ul class="text-gray-300 list-disc list-inside space-y-2 leading-relaxed">
