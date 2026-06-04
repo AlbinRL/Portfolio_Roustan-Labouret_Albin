@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Machine de Rube Goldberg</title>
+    <title>Machine de Rube Goldberg — Course automobile</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="/styles/global.css">
@@ -15,31 +15,73 @@
         <main class="flex-1 bg-gray-900 ml-64">
             <div class="container mx-auto p-8 max-w-4xl">
                 <a href="projets.html#projets-1ere" class="text-blue-400 hover:underline">← Retour aux projets</a>
-                <p class="text-sm text-blue-400 font-medium mt-4 mb-1">SN1 · Septembre 2024</p>
-                <h1 class="text-4xl font-bold text-white mt-2 mb-6">Machine de Rube Goldberg</h1>
+                <p class="text-sm text-blue-400 font-medium mt-4 mb-1">SN1 · Septembre 2024 · Groupe de 4</p>
+                <h1 class="text-4xl font-bold text-white mt-2 mb-2">Machine de Rube Goldberg</h1>
+                <p class="text-lg text-blue-300 mb-6">Thème : course automobile</p>
                 <div class="flex flex-wrap gap-2 mb-8 text-xs">
-                    <span class="px-2 py-1 rounded-full bg-gray-700 border border-gray-600 text-gray-300">Travail en équipe</span>
-                    <span class="px-2 py-1 rounded-full bg-gray-700 border border-gray-600 text-gray-300">Conception</span>
+                    <span class="px-2 py-1 rounded-full bg-teal-500/10 border border-teal-500/30 text-teal-300">Arduino</span>
+                    <span class="px-2 py-1 rounded-full bg-teal-500/10 border border-teal-500/30 text-teal-300">Capteurs</span>
+                    <span class="px-2 py-1 rounded-full bg-yellow-500/10 border border-yellow-500/30 text-yellow-300">Moteurs / servos</span>
+                    <span class="px-2 py-1 rounded-full bg-orange-500/10 border border-orange-500/30 text-orange-300">Autodesk Fusion 360</span>
+                    <span class="px-2 py-1 rounded-full bg-gray-700 border border-gray-600 text-gray-300">Impression 3D</span>
                 </div>
+
                 <section class="bg-gray-800 p-6 rounded-lg shadow-xl border border-gray-700 mb-6">
-                    <h2 class="with-line">Contexte</h2>
-                    <p class="text-gray-300 leading-relaxed">Projet de rentrée en binôme visant à concevoir une chaîne de réactions mécaniques inspirée des machines de Rube Goldberg : chaque élément déclenche le suivant jusqu'à atteindre un objectif final (ouverture, chute d'objet, etc.).</p>
+                    <h2 class="with-line">Présentation</h2>
+                    <p class="text-gray-300 leading-relaxed">
+                        Ce projet consistait à réaliser une <strong class="text-blue-200">machine de Rube Goldberg</strong> : un enchaînement de mécanismes où chaque étape déclenche la suivante, jusqu'à un objectif final. Notre réalisation prenait la forme d'un <strong class="text-blue-200">circuit de billes</strong> sur lequel la bille progresse en suivant des rampes, des obstacles et des éléments motorisés.
+                    </p>
+                    <p class="text-gray-300 leading-relaxed mt-4">
+                        Le travail s'est effectué en <strong class="text-blue-200">groupe de quatre</strong>. Chaque équipe devait choisir un thème pour habiller le parcours ; le nôtre était la <strong class="text-blue-200">course automobile</strong> (décor, formes, étapes évoquant un circuit ou un paddock).
+                    </p>
                 </section>
+
                 <section class="bg-gray-800 p-6 rounded-lg shadow-xl border border-gray-700 mb-6">
-                    <h2 class="with-line">Objectifs</h2>
-                    <ul class="text-gray-300 list-disc list-inside space-y-2">
-                        <li>Organiser le travail en projet (rôles, planning, livrables).</li>
-                        <li>Concevoir et prototyper une séquence mécanique fiable.</li>
-                        <li>Présenter le résultat et expliquer les choix techniques.</li>
+                    <h2 class="with-line">Contraintes du projet</h2>
+                    <ul class="text-gray-300 list-disc list-inside space-y-2 leading-relaxed">
+                        <li>Intégrer une carte <strong>Arduino</strong> pilotant le parcours.</li>
+                        <li>Utiliser <strong>au moins un détecteur</strong> (capteur de passage, fin de course, etc.) pour déclencher une étape ou surveiller la bille.</li>
+                        <li>Utiliser <strong>au moins deux actionneurs</strong> de type moteur, servo-moteur, électroaimant ou équivalent pour faire bouger une partie du circuit.</li>
+                        <li>Concevoir le circuit avec des <strong>matériaux simples</strong> (bois, polystyrène) et compléter avec des <strong>pièces en impression 3D</strong>, modélisées nous-mêmes dans <strong>Fusion 360</strong>.</li>
                     </ul>
                 </section>
+
                 <section class="bg-gray-800 p-6 rounded-lg shadow-xl border border-gray-700 mb-6">
                     <h2 class="with-line">Réalisations</h2>
-                    <p class="text-gray-300 leading-relaxed">Recherche d'idées, schémas de la chaîne, prototypage avec matériaux simples (rampe, dominos, poulies), tests itératifs et ajustements pour limiter les blocages. Restitution orale devant la classe avec bilan sur la coordination d'équipe.</p>
+                    <div class="text-gray-300 leading-relaxed space-y-4">
+                        <div>
+                            <span class="block text-blue-200 font-semibold mb-1">Circuit &amp; mécanique</span>
+                            <p>Conception du parcours de billes : plans du circuit, découpe et assemblage des structures en bois et polystyrène, rampes et guides pour que la bille enchaîne les étapes sans blocage. Habillage visuel autour du thème course automobile.</p>
+                        </div>
+                        <div>
+                            <span class="block text-blue-200 font-semibold mb-1">Conception 3D (Fusion 360)</span>
+                            <p>Modélisation de pièces sur mesure (supports, guides, éléments du décor) dans Fusion 360, puis fabrication par impression 3D et intégration sur le circuit.</p>
+                        </div>
+                        <div>
+                            <span class="block text-blue-200 font-semibold mb-1">Électronique &amp; programmation</span>
+                            <p>Câblage Arduino, branchement du détecteur et des deux actionneurs, programmation du sketch pour enchaîner les séquences (détection de la bille → déclenchement des moteurs/servos). Tests et réglages pour fiabiliser le parcours complet.</p>
+                        </div>
+                        <div>
+                            <span class="block text-blue-200 font-semibold mb-1">Travail en équipe</span>
+                            <p>Répartition des tâches (mécanique, 3D, code, intégration), essais en groupe et présentation du fonctionnement de la machine devant la classe.</p>
+                        </div>
+                    </div>
                 </section>
+
+                <section class="bg-gray-800 p-6 rounded-lg shadow-xl border border-gray-700 mb-6">
+                    <h2 class="with-line">Technologies &amp; outils</h2>
+                    <div class="text-gray-300 text-sm leading-relaxed space-y-2">
+                        <div class="rounded-md border border-gray-600/70 bg-gray-800/60 px-3 py-2"><strong class="text-blue-200">Arduino</strong> — microcontrôleur, capteurs et actionneurs</div>
+                        <div class="rounded-md border border-gray-600/70 bg-gray-800/60 px-3 py-2"><strong class="text-blue-200">Fusion 360</strong> — CAO et conception des pièces à imprimer</div>
+                        <div class="rounded-md border border-gray-600/70 bg-gray-800/60 px-3 py-2"><strong class="text-blue-200">Impression 3D</strong> — fabrication des pièces custom</div>
+                    </div>
+                </section>
+
                 <section class="bg-gray-800 p-6 rounded-lg shadow-xl border border-gray-700">
                     <h2 class="with-line">Compétences mobilisées (E4)</h2>
-                    <p class="text-gray-300">T4 — Travailler en mode projet</p>
+                    <p class="text-gray-300 leading-relaxed">
+                        <strong>T4 — Travailler en mode projet</strong> : organisation en groupe de 4, choix du thème, planification, prototypage itératif et livraison d'une machine fonctionnelle dans les délais imposés.
+                    </p>
                 </section>
             </div>
         </main>
