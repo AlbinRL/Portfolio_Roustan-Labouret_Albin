@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Site en Vue.js</title>
+    <title>Site Vue.js</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="/styles/global.css">
@@ -16,33 +16,77 @@
         <main class="flex-1 bg-gray-900 ml-64">
             <div class="container mx-auto p-8 max-w-4xl">
                 <a href="projets.html#projets-2eme" class="text-blue-400 hover:underline">← Retour aux projets</a>
-                <p class="text-sm text-blue-400 font-medium mt-4 mb-1">SN2 · Nov. – Déc. 2025</p>
-                <h1 class="text-4xl font-bold text-white mt-2 mb-6">Site en Vue.js</h1>
+                <p class="text-sm text-blue-400 font-medium mt-4 mb-1">SN2 · 25/11 – 25/12/2025</p>
+                <h1 class="text-4xl font-bold text-white mt-2 mb-2">Site Vue.js</h1>
+                <p class="text-lg text-blue-300 mb-6">Application Vue 3 : composants, SPA, formulaires validés et appels API côté front-end</p>
                 <div class="flex flex-wrap gap-2 mb-8 text-xs">
-                    <span class="px-2 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-emerald-300">Vue.js</span>
+                    <span class="px-2 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-emerald-300">Vue 3</span>
+                    <span class="px-2 py-1 rounded-full bg-gray-700 border border-gray-600 text-gray-300">Vite</span>
                     <span class="px-2 py-1 rounded-full bg-yellow-500/10 border border-yellow-500/30 text-yellow-300">JavaScript</span>
                     <span class="px-2 py-1 rounded-full bg-orange-500/10 border border-orange-500/30 text-orange-300">HTML</span>
                     <span class="px-2 py-1 rounded-full bg-sky-500/10 border border-sky-500/30 text-sky-300">CSS</span>
                 </div>
+
                 <section class="bg-gray-800 p-6 rounded-lg shadow-xl border border-gray-700 mb-6">
                     <h2 class="with-line text-white text-xl font-semibold mb-4">Contexte</h2>
-                    <p class="text-gray-300 leading-relaxed">Projet front-end avec Vue.js pour construire une interface dynamique sans rechargement complet des pages : composants réutilisables, données réactives et routing côté client.</p>
+                    <p class="text-gray-300 leading-relaxed">
+                        Projet web réalisé avec <strong class="text-blue-200">Vue 3</strong> en 2ème année pour consolider les bases du framework : application front interactive, orientée composants, navigation en SPA et manipulations de données via API.
+                    </p>
+                    <p class="text-gray-300 leading-relaxed mt-4">
+                        L'objectif était de mettre en pratique une architecture moderne (composants réutilisables, état local avec <code class="text-blue-200">ref</code> et <code class="text-blue-200">reactive</code>) tout en travaillant la présence en ligne par une interface dynamique et structurée.
+                    </p>
                 </section>
+
                 <section class="bg-gray-800 p-6 rounded-lg shadow-xl border border-gray-700 mb-6">
                     <h2 class="with-line text-white text-xl font-semibold mb-4">Objectifs</h2>
-                    <ul class="text-gray-300 list-disc list-inside space-y-2">
-                        <li>Structurer l'application en composants Vue.</li>
-                        <li>Gérer l'état et les interactions utilisateur.</li>
-                        <li>Améliorer la présence web via une SPA moderne (D3).</li>
+                    <ul class="text-gray-300 list-disc list-inside space-y-2 leading-relaxed">
+                        <li>Construire une navigation simple entre plusieurs sections de l'application.</li>
+                        <li>Créer un formulaire avec validation côté client et messages d'état.</li>
+                        <li>Consommer des APIs externes et afficher les réponses de manière lisible.</li>
+                        <li>Mettre en place un composant bonus de type accordéon.</li>
+                        <li>Structurer proprement le code en composants réutilisables.</li>
                     </ul>
                 </section>
+
                 <section class="bg-gray-800 p-6 rounded-lg shadow-xl border border-gray-700 mb-6">
                     <h2 class="with-line text-white text-xl font-semibold mb-4">Réalisations</h2>
-                    <p class="text-gray-300 leading-relaxed">Initialisation du projet (Vite ou CLI Vue), pages avec Vue Router, formulaires et listes dynamiques, consommation d'une API REST fictive ou JSON local, styles CSS scoped et build de production. Bilan sur les bonnes pratiques de découpage des composants.</p>
+                    <div class="text-gray-300 leading-relaxed space-y-4">
+                        <div>
+                            <span class="block text-blue-200 font-semibold mb-1">Navigation &amp; pages</span>
+                            <p>SPA avec pages internes (accueil, contact, API, bonus) et routage entre les vues sans rechargement complet.</p>
+                        </div>
+                        <div>
+                            <span class="block text-blue-200 font-semibold mb-1">Formulaire de contact</span>
+                            <p>Formulaire avec règles de validation, retours utilisateur (succès / erreur) et gestion des états du composant.</p>
+                        </div>
+                        <div>
+                            <span class="block text-blue-200 font-semibold mb-1">Testeur d'API &amp; intégrations</span>
+                            <p>Interface configurable (URL, méthode HTTP, body JSON) avec <code class="text-blue-200">fetch</code> vers des APIs externes (JSONPlaceholder, Chuck Norris API) et affichage formaté des réponses JSON.</p>
+                        </div>
+                        <div>
+                            <span class="block text-blue-200 font-semibold mb-1">Composant accordéon (bonus)</span>
+                            <p>Accordéon affichant un tableau d'utilisateurs et une blague récupérée via API, pour illustrer la réutilisation de composants et le traitement de flux distants.</p>
+                        </div>
+                    </div>
                 </section>
+
+                <section class="bg-gray-800 p-6 rounded-lg shadow-xl border border-gray-700 mb-6">
+                    <h2 class="with-line text-white text-xl font-semibold mb-4">Technologies &amp; outils</h2>
+                    <div class="text-gray-300 text-sm leading-relaxed space-y-2">
+                        <div class="rounded-md border border-gray-600/70 bg-gray-800/60 px-3 py-2"><strong class="text-blue-200">Vue 3</strong> — framework, composants et réactivité (<code>ref</code>, <code>reactive</code>)</div>
+                        <div class="rounded-md border border-gray-600/70 bg-gray-800/60 px-3 py-2"><strong class="text-blue-200">Vite / Vue CLI</strong> — outillage, scripts npm (dev, build, preview)</div>
+                        <div class="rounded-md border border-gray-600/70 bg-gray-800/60 px-3 py-2"><strong class="text-blue-200">HTML, CSS, JavaScript</strong> — intégration et styles des vues</div>
+                        <div class="rounded-md border border-gray-600/70 bg-gray-800/60 px-3 py-2"><strong class="text-blue-200">API REST</strong> — JSONPlaceholder, Chuck Norris API</div>
+                    </div>
+                </section>
+
                 <section class="bg-gray-800 p-6 rounded-lg shadow-xl border border-gray-700">
                     <h2 class="with-line text-white text-xl font-semibold mb-4">Compétences mobilisées (E4)</h2>
-                    <p class="text-gray-300">D3, T4, O6</p>
+                    <ul class="text-gray-300 list-disc list-inside space-y-2 leading-relaxed">
+                        <li><strong>D3</strong> (Développer la présence en ligne de l'organisation)</li>
+                        <li><strong>T4</strong> (Travailler en mode projet)</li>
+                        <li><strong>O6</strong> (Organiser son développement professionnel)</li>
+                    </ul>
                 </section>
             </div>
         </main>
