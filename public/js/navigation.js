@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 activeNavId = 'nav-projets';
             } else if (path.includes('parcour')) {
                 activeNavId = 'nav-parcour';
-            } else if (path.includes('competences')) {
+            } else if (path.includes('competences') || path.includes('tableau-e4')) {
                 activeNavId = 'nav-competences';
             } else if (path.includes('e5') || path.includes('e6')) {
                 activeNavId = 'nav-e5';

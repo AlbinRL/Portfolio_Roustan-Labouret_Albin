@@ -1,0 +1,136 @@
+/* Tableau de synthèse E4 — thème portfolio (sombre) */
+.tableau-e4-block {
+    margin-top: 2rem;
+}
+
+.tableau-e4-block .with-line {
+    margin-bottom: 1rem;
+}
+
+.tableau-e4-legend {
+    margin-bottom: 1.25rem;
+}
+
+.tableau-e4-legend-title {
+    font-size: 0.875rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #93c5fd;
+    margin-bottom: 0.75rem;
+}
+
+.tableau-e4-legend-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 0.5rem;
+}
+
+.tableau-e4-legend-item {
+    background: rgba(31, 41, 55, 0.6);
+    border: 1px solid rgb(75, 85, 99);
+    border-radius: 0.375rem;
+    padding: 0.5rem 0.75rem;
+    font-size: 0.8rem;
+    line-height: 1.35;
+    color: #d1d5db;
+}
+
+.tableau-e4-legend-item strong {
+    color: #60a5fa;
+    margin-right: 0.25rem;
+}
+
+.tableau-e4-scroll {
+    overflow-x: auto;
+    border-radius: 0.5rem;
+    border: 1px solid rgb(75, 85, 99);
+}
+
+.tableau-e4-table {
+    width: 100%;
+    min-width: 900px;
+    border-collapse: collapse;
+    font-size: 0.875rem;
+    background: rgb(31, 41, 55);
+}
+
+.tableau-e4-table thead th {
+    border: 1px solid rgb(75, 85, 99);
+    padding: 0.65rem 0.5rem;
+    text-align: center;
+    vertical-align: middle;
+    font-weight: 600;
+    color: #fff;
+}
+
+.tableau-e4-table thead th.col-main {
+    background: #2563eb;
+    text-align: left;
+    min-width: 280px;
+}
+
+.tableau-e4-table thead th.col-period {
+    background: #2563eb;
+    min-width: 160px;
+}
+
+.tableau-e4-table thead th.col-skill {
+    background: #1d4ed8;
+    width: 52px;
+    font-size: 0.8rem;
+}
+
+.tableau-e4-table tbody td {
+    border: 1px solid rgb(75, 85, 99);
+    padding: 0.5rem 0.6rem;
+    vertical-align: middle;
+    color: #d1d5db;
+}
+
+.tableau-e4-table tbody tr:not(.section-row):nth-child(even) {
+    background: rgba(17, 24, 39, 0.5);
+}
+
+.tableau-e4-table tbody tr:not(.section-row):hover {
+    background: rgba(55, 65, 81, 0.5);
+}
+
+.tableau-e4-table td.project {
+    text-align: left;
+    color: #e5e7eb;
+}
+
+.tableau-e4-table td.period {
+    text-align: center;
+    white-space: nowrap;
+    color: #9ca3af;
+}
+
+.tableau-e4-table td.check {
+    text-align: center;
+    color: #60a5fa;
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+.tableau-e4-table tr.section-row td {
+    background: rgba(37, 99, 235, 0.15);
+    color: #93c5fd;
+    font-weight: 700;
+    font-size: 0.75rem;
+    text-align: center;
+    letter-spacing: 0.03em;
+    padding: 0.6rem;
+    border-color: rgb(75, 85, 99);
+}
+
+.tableau-e4-meta {
+    margin-top: 1rem;
+    font-size: 0.85rem;
+    color: #9ca3af;
+}
+
+.tableau-e4-meta p {
+    text-align: left;
+}
